@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
-public class SaudacaoController {
+@RequestMapping("/")
+public class SaudacaoController_Teste {
     
-    @GetMapping("/")
+    @GetMapping("/saucacao")
     public String dizerOla(@RequestParam(value = "nome", defaultValue = "Mundo") String nome) {
         return "Olá" + nome + "!";
     }
