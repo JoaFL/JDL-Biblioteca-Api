@@ -1,5 +1,7 @@
 package JDL.Biblioteca.Models;
 
+import JDL.Biblioteca.Enums.NivelPerm;
+
 public class Usuario extends DbModel{
 
     private String matricula;
@@ -7,11 +9,11 @@ public class Usuario extends DbModel{
     private String numero;
     private String serie;
     private String email;
-    private int nivelPerm;
+    private NivelPerm nivelPerm;
     private String senha;
 
 
-    public Usuario(int id, String matricula, String nome, String numero, String serie, String email, int nivelPerm, String senha) {
+    public Usuario(int id, String matricula, String nome, String numero, String serie, String email, NivelPerm nivelPerm, String senha) {
 
         super(id);
 
