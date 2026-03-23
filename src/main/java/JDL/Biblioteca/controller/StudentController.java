@@ -1,4 +1,4 @@
-package JDL.Biblioteca.controller;
+package JDL.Biblioteca.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
