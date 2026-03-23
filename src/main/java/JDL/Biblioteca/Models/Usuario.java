@@ -26,13 +26,6 @@ public class Usuario extends DbModel{
         this.senha = senha;
     }
     
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getMatricula() {
         return matricula;
     }
@@ -68,10 +61,10 @@ public class Usuario extends DbModel{
         this.email = email;
     }
 
-    public int getNivelPerm() {
+    public NivelPerm getNivelPerm() {
         return nivelPerm;
     }
-    public void setNivelPerm(int nivelPerm) {
+    public void setNivelPerm(NivelPerm nivelPerm) {
         this.nivelPerm = nivelPerm;
     }
 
