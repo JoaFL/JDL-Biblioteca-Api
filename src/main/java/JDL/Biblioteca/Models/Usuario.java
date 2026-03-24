@@ -16,7 +16,8 @@ public class Usuario extends DbModel {
     private String senha;
 
 
-    public Usuario(int id, String matricula, String nome, String numero, String serie, String email, NivelPerm nivelPerm, String senha) {
+    public Usuario(int id, String matricula, String nome, String numero, 
+                   String serie, String email, NivelPerm nivelPerm, String senha) {
 
         super(id);
 
