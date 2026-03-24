@@ -1,27 +1,39 @@
 package JDL.Biblioteca.Models;
 
 import java.time.LocalDate;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter @Setter
-public class Emprestimo extends DbModel {
+@Entity
+@Table(name = "TDER_LIVRO")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Emprestimo {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private int id;
+
+    @Column(nullable = false)
     private LocalDate dataEmprestimo;
+    
+    @Column(nullable = false)
     private LocalDate dataDevolucao;
-    private int qtDiasEmprestados;
-    private double precoDiaria;
-    private int qtDiasAtrasados;
 
-    public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, 
-                      int qtDiasEmprestados, double precoDiaria, int qtDiasAtrasados) {
-        
-        super(id);
-        
-        this.dataEmprestimo = dataEmprestimo;
-        this.dataDevolucao = dataDevolucao;
-        this.qtDiasEmprestados = qtDiasEmprestados;
-        this.precoDiaria = precoDiaria;
-        this.qtDiasAtrasados = qtDiasAtrasados;
-    }
+    @Column(nullable = false)
+    private int qtDiasEmprestados;
+
+    @Column(nullable = false)
+    private double precoDiaria;
+
+    @Column(nullable = false)
+    private int qtDiasAtrasados;
 }
