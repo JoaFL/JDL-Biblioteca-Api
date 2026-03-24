@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class Usuario extends DbModel{
+public class Usuario extends DbModel {
 
     private String matricula;
     private String nome;
