@@ -11,11 +11,11 @@ public class AlunoController {
     
     @GetMapping("/nomes")
     public String getAluno(@RequestParam int id) {
-        return ;
+        return "";
     }
 
     @GetMapping("/nomes")
     public String postStudentName(@RequestParam String nome) {
-        return ;
+        return "";
     }
 }
