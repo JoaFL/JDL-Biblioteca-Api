@@ -6,5 +6,5 @@ import JDL.Biblioteca.Models.*;
 
 @Repository
 public interface AutorInterface extends JpaRepository<Livro, Integer> { 
-
+    
 }
