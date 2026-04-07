@@ -7,4 +7,6 @@ import JDL.Biblioteca.Models.*;
 @Repository
 public interface EditoraInterface extends JpaRepository<Editora, Integer> { 
 
+    List<Editora> findByNomeEditora(String nomeEditora);
+
 }

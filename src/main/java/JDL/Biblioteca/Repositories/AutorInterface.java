@@ -7,4 +7,7 @@ import JDL.Biblioteca.Models.*;
 @Repository
 public interface AutorInterface extends JpaRepository<Autor, Integer> { 
     
+    List<Autor> findByNomeAutor(String nomeAutor);
+    List<Autor> findBySobrenome(String sobrenome);
+
 }
