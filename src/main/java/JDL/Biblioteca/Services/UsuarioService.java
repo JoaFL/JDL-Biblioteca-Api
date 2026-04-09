@@ -35,8 +35,16 @@ public class UsuarioService {
             usuario.setIdUsuarioPk(id);
             return repository.save(usuario);
         }
-
         return null;
+    }
+
+    public boolean deleteUsuario(Integer id) {
+        if (repository.existsById(id)) {
+            repository.deleteById(id);
+            return true;
+        }
+
+        return false;
     }
 
     public boolean validarUsuario(Usuario usuario) {
