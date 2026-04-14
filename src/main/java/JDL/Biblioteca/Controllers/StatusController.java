@@ -22,7 +22,7 @@ public class StatusController {
     }
 
     @GetMapping("/get/{id}")
-    public Status getStatusById(@PathVariable Long id) {
+    public Status getStatusById(@PathVariable Integer id) {
         return statusService.getStatusById(id);
     }
 
@@ -32,12 +32,12 @@ public class StatusController {
     }
 
     @PutMapping("/put/{id}")
-    public Status updateStatus(@PathVariable Long id, @RequestBody Status status) {
+    public Status updateStatus(@PathVariable Integer id, @RequestBody Status status) {
         return statusService.updateStatus(id, status);
     }
 
     @DeleteMapping("/delete/{id}")
-    public void deleteStatus(@PathVariable Long id) {
+    public void deleteStatus(@PathVariable Integer id) {
         statusService.deleteStatus(id);
     }
 }

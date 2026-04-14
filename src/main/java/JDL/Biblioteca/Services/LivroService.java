@@ -47,6 +47,6 @@ public class LivroService {
     }
 
     public boolean validarLivro(Livro livro) {
-        return (livro.getTitulo() != null && !livro.getTitulo().isEmpty());
+        return (livro.getNomeLivro() != null && !livro.getNomeLivro().isEmpty());
     }
 }

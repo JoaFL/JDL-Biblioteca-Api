@@ -18,7 +18,7 @@ public class TipoUsuarioController {
 
     @GetMapping("/get")
     public List<TipoUsuario> getAllTiposUsuario() {
-        return tipoUsuarioService.getAllTiposUsuario();
+        return tipoUsuarioService.getAllTipoUsuario();
     }
 
     @GetMapping("/get/{id}")

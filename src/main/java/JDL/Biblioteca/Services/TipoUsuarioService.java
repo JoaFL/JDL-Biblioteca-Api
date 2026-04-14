@@ -22,11 +22,7 @@ public class TipoUsuarioService {
     }
 
     public TipoUsuario createTipoUsuario(TipoUsuario tipoUsuario) {
-        if (validarTipoUsuario(tipoUsuario)) {
-            return repository.save(tipoUsuario);
-        }
-
-        return null;
+        return repository.save(tipoUsuario);
     }
 
     public TipoUsuario updateTipoUsuario(Integer id, TipoUsuario tipoUsuario) {
@@ -44,9 +40,5 @@ public class TipoUsuarioService {
         }
 
         return false;
-    }
-
-    public boolean validarTipoUsuario(TipoUsuario tipoUsuario) {
-        return (tipoUsuario.getNome() != null && !tipoUsuario.getNome().isEmpty());
     }
 }

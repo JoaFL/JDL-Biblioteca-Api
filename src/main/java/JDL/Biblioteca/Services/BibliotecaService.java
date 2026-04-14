@@ -47,6 +47,6 @@ public class BibliotecaService {
     }
 
     public boolean validarBiblioteca(Biblioteca biblioteca) {
-        return (biblioteca.getNome() != null && !biblioteca.getNome().isEmpty());
+        return (biblioteca.getNomeBiblioteca() != null && !biblioteca.getNomeBiblioteca().isEmpty());
     }
 }

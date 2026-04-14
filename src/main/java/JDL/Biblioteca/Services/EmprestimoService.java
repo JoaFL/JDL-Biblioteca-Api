@@ -47,6 +47,6 @@ public class EmprestimoService {
     }
 
     public boolean validarEmprestimo(Emprestimo emprestimo) {
-        return (emprestimo.getDataEmprestimo() != null && emprestimo.getDataDevolucao() != null);
+        return (emprestimo.getDtEmprestimo() != null && emprestimo.getDtDevolucao() != null);
     }
 }

@@ -31,7 +31,7 @@ public class AutorService {
 
     public Autor updateAutor(Integer id, Autor autor) {
         if (repository.existsById(id)) {
-            autor.setIdAutorPk(id);
+            autor.setIdAutor(id);
             return repository.save(autor);
         }
         return null;
@@ -47,6 +47,6 @@ public class AutorService {
     }
 
     public boolean validarAutor(Autor autor) {
-        return (autor.getNome() != null && !autor.getNome().isEmpty());
+        return (autor.getNomeAutor() != null && !autor.getNomeAutor().isEmpty());
     }
 }

@@ -47,6 +47,6 @@ public class EditoraService {
     }
 
     public boolean validarEditora(Editora editora) {
-        return (editora.getNome() != null && !editora.getNome().isEmpty());
+        return (editora.getNomeEditora() != null && !editora.getNomeEditora().isEmpty());
     }
 }
